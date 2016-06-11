@@ -1,0 +1,45 @@
+<ion-view class ="item-complex" "item-content" "item" style = "background-color:#000;">
+
+<div class="bar bar-header" style = "background-color:#000; border : none;">
+  <h1 class="divheader">New Announcement</h1>
+  <div class="title" id="shadow"></div>
+  <button class="button button-icon icon ion-ios-cloud-upload-outline" ng-click="courserefresh()"></button>
+</div>
+
+<ion-content class = "has-subheader w3-container" style = "font-family: Comic Sans, Comic Sans MS, cursive;font-weight:10px;position:fixed;">
+
+  <form class="w3-container w3-card-4" action="form.asp">
+
+    <input class="w3-input w3-border" placeholder = "Subject" name="first" type="text" ng-model="nmsg.title">
+
+    <div style = "padding-top:10%;"> </div>
+
+    <!--<select name="mySelect" id="mySelect"-->
+            <!--ng-options="option.name for option in data.availableOptions track by option.id"-->
+            <!--ng-model="data.selectedOption"></select>-->
+
+    <select class="w3-select" name="option"  ng-options="option.name for option in data.availableOptions track by option.id"
+            ng-model="data.selectedOption">
+      <option value="" disabled selected>Courses</option>
+      <!--<option>{{data.availableOptions.name}}</option>-->
+      <!--<option ng-repeat="something in c track by $index" ng-model="RECIEVER">{{something}}</option>-->
+      <!--<option value="2">Option 2</option>-->
+      <!--<option value="3">Option 3</option>-->
+    </select>
+    <div style = "padding-top:10%;"> </div>
+
+
+
+    <textarea class="w3-input" placeholder="Message" style="width:100%" required ng-model="nmsg.msg"></textarea>
+
+    <div style = "padding-top:10%;"> </div>
+
+    <a  style = "text-decoration:none">
+      <button class="button buttonfont" style="background-color:rgb(223, 178, 0 );color:white;width:100%;" ng-click="send()">Send
+      </button>
+    </a>
+
+  </form>
+</ion-content>
+
+</ion-view>

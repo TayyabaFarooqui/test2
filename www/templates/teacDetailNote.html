@@ -1,0 +1,29 @@
+<div class= "abc" >
+
+  <div class="bar bar-header bar-clear" style= "margin-top:5px;height:40px;" >
+    <a  href="#teacNote"><button class="button button-icon icon ion-ios-arrow-back">Back</button></a>
+    <div class="title" style="font-size: 28px;font-family: Times New Roman, Times, serif;">Details</div>
+
+  </div>
+
+  <ion-content class="has-header">
+    <div style="width:100%; height:100%;">
+
+      <a class="item item-avatar anchor">
+        <img src="user.png">
+        <h2 style="color:white;font-weight:700;">{{v.SENDER}}</h2>
+        <!--<p style="color:white;">03001234567</p>-->
+      </a>
+
+      <div>
+        <p class="secondpara">{{v.date1}}</p>
+      </div>
+
+      <div>
+        <p class="secondpara">{{v.NOTICE}}</p>
+      </div>
+      <a ng-click="download()">{{v.file}}</a>
+    </div>
+  </ion-content>
+</div>
+

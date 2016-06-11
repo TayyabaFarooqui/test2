@@ -1,0 +1,20 @@
+<div class="abc">
+  <div class="bar bar-header bar-clear" style= "margin-top:5px;height:40px;" >
+    <a  href="#home"><button class="button button-icon icon ion-ios-arrow-back">Back</button></a>
+    <div class="title" id="shadow"></div>
+    <!--<button class="button button-icon icon ion-ios-cloud-upload-outline" ng-click="courserefresh()"></button>-->
+    <div class="title" style="font-size: 28px;font-family: Times New Roman, Times, serif;">Courses</div>
+
+  </div>
+
+  <ion-content class="has-header">
+    <div class="list card">
+
+      <a style="text-decoration: underline" class="item item-icon-left" ng-click="select(course)" name="option"  ng-repeat="course in courses">
+        <i class="icon ion-card"></i>
+        {{course.C_NAME}}
+      </a>
+
+    </div>
+  </ion-content>
+</div>
